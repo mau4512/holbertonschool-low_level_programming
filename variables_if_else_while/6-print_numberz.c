@@ -8,12 +8,12 @@
  * Return: Always 0 (Success)
  */
 
-int main (void)
+int main(void)
 {
-	int d;
+	int i;
 
-	for (d = '0'; d <= '9'; d++)
-		putchar(d);
+	for (i = '0'; i <= '9'; i++)
+		putchar(i);
 	putchar('\n');
 
 	return (0);
