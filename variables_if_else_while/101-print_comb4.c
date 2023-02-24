@@ -20,7 +20,7 @@ int main(void)
 	{
 		for (j = 1; j < 10; j++)
 		{
-			for (r = 2; r < 10; r ++)
+			for (r = 2; r < 10; r++)
 			{	
 				if ((i != j) && (i != r) && (j != r) && (j > i) && (r > j))
 				{
