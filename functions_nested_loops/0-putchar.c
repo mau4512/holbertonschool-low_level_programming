@@ -1,5 +1,5 @@
 #include <unistd.h>
-#include "Holberton.h"
+#include "main.h"
 
 /**
  * main - Check description
