@@ -6,6 +6,7 @@
  * @src: an input string
  * Return: A pointer to the resulting string
  */
+
 char *_strncat(char *dest, char *src, int n)
 {
 	char *temp = dest;
@@ -17,7 +18,7 @@ char *_strncat(char *dest, char *src, int n)
 
 	while (i < n)
 	{
-		if(*src)
+		if (*src)
 		{	
 			*dest++ = *src++;
 			i++;
