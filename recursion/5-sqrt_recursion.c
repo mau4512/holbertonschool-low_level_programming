@@ -3,10 +3,10 @@
 int _sqrt(int prev, int root);
 
 /**
- * _sqrt - find square root
- * @prev: previous value
- * @root: square root value
- * Return: the square root
+ * _sqrt - find square root of num
+ * @cont: counts the value
+ * @num: square num value
+ * Return: the square root of num
  */
 int _sqrt(int cont, int num)
 {
