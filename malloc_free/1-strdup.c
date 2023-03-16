@@ -9,27 +9,27 @@
  * Return: Apointer to new string or NULL if it str is NULL
  */
 
-char *_strdup(char *str){
-
+char *_strdup(char *str)
+{
 	char *nuevo;
-	
-	int size = 0;
+
+	int size = 0:
 
 	int i = 0;
 
 	if (str == NULL)
 		return (NULL);
 
-	while(str[size] != '\0')
+	while (str[size] != '\0')
 	{
 		size++;
 	}
-       
-	nuevo = malloc(sizeof(char) * size);
 
-	if(str != NULL)
+	nuevo = malloc(sizeof(char) * (size + 1));
+
+	if (str != NULL)
 	{
-		for(i = 0; i < size; i++)
+		for (i = 0; i < size; i++)
 		{
 			nuevo[i] = str[i];
 		}
