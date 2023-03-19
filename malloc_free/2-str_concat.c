@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /*
- * *str_concat - A function that concatenates two strings
+ * str_concat - A function that concatenates two strings
  * @s1: An input pointer of the first string
  * @s2: An input pointer of the second string
  * Return: a pointer to concatened strings or NULL if it str is NULL
@@ -33,7 +33,7 @@ char *str_concat(char *s1, char *s2)
 	s2 = start2;
 	new_str = malloc(sizeof(char) * (lens1 + lens2 + 1));
 	start1 = new_str;
-	for (i = 0; i < (lens1 + lens2);i++)
+	for (i = 0; i < (lens1 + lens2); i++)
 	{
 		if (i < lens1)
 		{
