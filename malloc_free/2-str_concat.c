@@ -9,12 +9,10 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *new_str, *start1, *start2;
-
 	int i, lens1 = 0, lens2 = 0;
 
 	start1 = s1;
 	start2 = s2;
-
 	if (s1 == NULL)
 		s1 = "";
 	while (*s1)
@@ -32,8 +30,8 @@ char *str_concat(char *s1, char *s2)
 	}
 	s2 = start2;
 	new_str = malloc(sizeof(char) * (lens1 + lens2 + 1));
-	if(new_str == NULL)
-		return NULL;
+	if (new_str == NULL)
+		return (NULL);
 	start1 = new_str;
 	for (i = 0; i < (lens1 + lens2); i++)
 	{
