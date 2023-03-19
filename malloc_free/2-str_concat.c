@@ -1,13 +1,11 @@
 #include "main.h"
 #include <stdlib.h>
-
 /*
- * str_concat - A function that concatenates two strings
+ * *str_concat - A function that concatenates two strings
  * @s1: An input pointer of the first string
  * @s2: An input pointer of the second string
  * Return: a pointer to concatened strings or NULL if it str is NULL
  */
-
 char *str_concat(char *s1, char *s2)
 {
 	char *new_str, *start1, *start2;
@@ -18,9 +16,7 @@ char *str_concat(char *s1, char *s2)
 	start2 = s2;
 
 	if (s1 == NULL)
-	{
 		s1 = "";
-	}
 	while (*s1)
 	{
 		lens1++;
@@ -28,9 +24,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	s1 = start1;
 	if (s2 == NULL)
-	{
 		s2 = "";
-	}
 	while (*s2)
 	{
 		lens2++;
