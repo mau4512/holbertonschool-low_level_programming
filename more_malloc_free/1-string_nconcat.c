@@ -7,7 +7,7 @@
  * @s2: is the second input string
  * @n: the unsigned input integer
  * concatened s1 with n first elements of s2
- * RETURN: a pointer that contains the strings concatened
+ * Return: a pointer to concatened strings or NULL if it str is NULL
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
