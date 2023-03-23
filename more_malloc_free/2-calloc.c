@@ -23,5 +23,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	for (i = 0; i < nmemb * size; i++)
 		*(almacen + i) = 0;
 
-	return almacen;
+	return (almacen);
 }
