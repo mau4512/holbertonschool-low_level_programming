@@ -5,7 +5,7 @@
  * array_range - A function that creates an array of integers
  * @min: an input integer that represents the minimum
  * @max: an input integer that representes the maximum
- * Return: A pointer to the newly array created or NULL 
+ * Return: A pointer to the newly array created or NULL
  */
 
 int *array_range(int min, int max)
