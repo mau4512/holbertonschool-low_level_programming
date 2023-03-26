@@ -30,7 +30,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	cname = malloc(len_name + 1);
 	if (cname == NULL)
-		return NULL;
+		return (NULL);
 
 	for (i = 0; name[i]; i++)
 		cname[i] = name[i];
