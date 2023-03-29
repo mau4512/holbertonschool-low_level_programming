@@ -6,7 +6,7 @@
 /**
  * print_all - is a function that print everithing
  * @format: a list of type of arguments passed to the function
- * @Return: nothing
+ * Return: nothing
  */
 
 void print_all(const char * const format, ...)
@@ -21,7 +21,7 @@ void print_all(const char * const format, ...)
 		printf("\n");
 		return;
 	}
-	while(format[i])
+	while (format[i])
 	{
 		switch (format[i])
 		{
@@ -36,15 +36,16 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				almacen = va_arg(ap, char*);
-				if( almacen != NULL)
+				if (almacen != NULL)
 				{
 					printf("%s", almacen);
 					break;
 				}
-				printf(("nil"));
+				printf("(nil)");
 				break;
 		}
-		if ((format[i] == 'c' || format [i] == 'i' || format[i] == 'f' || format[i] == 's') && format[(i + 1)] != '\0')
+		if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's') 
+				&& format[(i + 1)] != '\0')
 		printf(", ");
 		i++;
 	}
